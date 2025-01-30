@@ -13,6 +13,16 @@ int main() {
     char cidade;
     float populacao, area, densidade, pib, pib2;
     int turismo;
+    //-------------------------------------------
+
+
+    printf("Digite o código da carta \n");
+    scanf("%d", codigo);
+
+    //--------------------------------------1
+
+
+    printf("Código da carta: %d \n", codigo);
 
     return 0;
 }
