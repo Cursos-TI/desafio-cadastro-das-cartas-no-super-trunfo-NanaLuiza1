@@ -1,28 +1,51 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    
-    int codigo;
-    char estado;
-    char cidade;
-    float populacao, area, densidade, pib, pib2;
+    char codigo[10], estado[50], cidade[50];
     int turismo;
-    //-------------------------------------------
+    float populacao, area, densidadep, pib, percapita;
+
+    printf("Digite o código da carta: \n");
+    scanf("%s", codigo);
+
+    printf("Digite o estado: \n");
+    scanf("%s", estado);
+
+    printf("Digite a cidade: \n");
+    scanf("%s", cidade);
+
+    printf("Digite o número da população: \n");
+    scanf("%f", &populacao);
+
+    printf("Digite o tamanho da área: \n");
+    scanf("%f", &area);
+
+    printf("Digite a densidade populacional: \n");
+    scanf("%f", &densidadep);
+
+    printf("Digite o PIB: \n");
+    scanf("%f", &pib);
+
+    printf("Digite o PIB per capita: \n");
+    scanf("%f", &percapita);
+
+    printf("Digite o número de pontos turísticos: \n");
+    scanf("%d", &turismo);
+
+    // resultado
+
+    printf("Código: %s \n", codigo);
+    printf("Estado: %s \n", estado);
+    printf("Cidade: %s \n", cidade);
+    printf("População: %f \n", populacao);
+    printf("Área: %f \n", area);
+    printf("Densidade populacional: %f \n", densidadep);
+    printf("PIB: %f \n", pib);
+    printf("PIB per capita: %f \n", percapita);
+    printf("Número de pontos turísticos: %d \n", turismo);
+ 
 
 
-    printf("Digite o código da carta \n");
-    scanf("%d", codigo);
-
-    //--------------------------------------1
-
-
-    printf("Código da carta: %d \n", codigo);
 
     return 0;
 }
