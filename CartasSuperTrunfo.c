@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 int main() {
+
+    //Variaveis
     char codigo[10], estado[50], cidade[50];
     int turismo;
     float populacao, area, densidadep, pib, percapita;
-
+    //---------------------------------------------------------
+    
     printf("Digite o código da carta: \n");
     scanf("%s", codigo);
 
