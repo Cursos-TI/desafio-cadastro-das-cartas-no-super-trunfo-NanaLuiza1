@@ -3,51 +3,92 @@
 int main() {
 
     //Variaveis
-    char codigo[10], estado[50], cidade[50];
-    int turismo;
-    float populacao, area, densidadep, pib, percapita;
-    //---------------------------------------------------------
-    
-    printf("Digite o código da carta: \n");
-    scanf("%s", codigo);
 
-    printf("Digite o estado: \n");
+    //Variaveis da primeira carta
+    char estado[3]; //repesentando um dos oito estados
+    char codigo[10]; //identifiacar o código da carta
+    char cidade [50]; //Nome da cidade
+    float populacao; //Número de abitantes
+    float area; //Quilômetros quadrados
+    float pib; //Produto interno bruto da cidade
+    int pturistico; //Quantidade de pontos turísticos
+
+    //Variaveis da segunda carta
+    char estado2[3];
+    char codigo2[10];
+    char cidade2[50];
+    float populacao2;
+    float area2;
+    float pib2;
+    int pturistico2;
+
+    //---------------------------------------------------------
+
+    printf("Estado: \n");
     scanf("%s", estado);
 
-    printf("Digite a cidade: \n");
+    printf("Código: \n");
+    scanf("%s", codigo);
+
+    printf("Cidade: \n");
     scanf("%s", cidade);
 
-    printf("Digite o número da população: \n");
+    printf("População: \n");
     scanf("%f", &populacao);
 
-    printf("Digite o tamanho da área: \n");
+    printf("Aréa: \n");
     scanf("%f", &area);
 
-    printf("Digite a densidade populacional: \n");
-    scanf("%f", &densidadep);
-
-    printf("Digite o PIB: \n");
+    printf("PIB: \n");
     scanf("%f", &pib);
 
-    printf("Digite o PIB per capita: \n");
-    scanf("%f", &percapita);
+    printf("Número de pontos turísticos: \n");
+    scanf("%d \n", &pturistico);
 
-    printf("Digite o número de pontos turísticos: \n");
-    scanf("%d", &turismo);
+    printf("Carta 2 \n");
+
+    printf("Estado: \n");
+    scanf("%s", estado2);
+
+    printf("Código: \n");
+    scanf("%s", codigo2);
+
+    printf("Cidade: \n");
+    scanf("%s", cidade2);
+
+    printf("População: \n");
+    scanf("%f", &populacao2);
+
+    printf("Aréa: \n");
+    scanf("%f", &area2);
+
+    printf("PIB: \n");
+    scanf("%f", &pib2);
+
+    printf("Número de pontos turísticos: \n");
+    scanf("%d", &pturistico2);
 
     // resultado
 
-    printf("Código: %s \n", codigo);
+    printf("Carta 1 \n");
     printf("Estado: %s \n", estado);
+    printf("Código: %s \n", codigo);
     printf("Cidade: %s \n", cidade);
     printf("População: %f \n", populacao);
     printf("Área: %f \n", area);
-    printf("Densidade populacional: %f \n", densidadep);
     printf("PIB: %f \n", pib);
-    printf("PIB per capita: %f \n", percapita);
-    printf("Número de pontos turísticos: %d \n", turismo);
+    printf("Número de pontos turísticos: %d \n", pturistico);
  
+    //---------------------------------------------------------------
 
+    printf("Carta 2 \n");
+    printf("Estado: %s \n", estado2);
+    printf("Código: %s \n", codigo2);
+    printf("Cidade: %s \n", cidade2);
+    printf("População: %f \n", populacao2);
+    printf("Área: %f \n", area2);
+    printf("PIB: %f \n", pib2);
+    printf("Número de pontos turísticos: %d \n", pturistico2);
 
 
     return 0;
